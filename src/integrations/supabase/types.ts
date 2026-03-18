@@ -14,7 +14,147 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      audit_requests: {
+        Row: {
+          besoin: string | null
+          created_at: string | null
+          email: string | null
+          id: string
+          nom: string | null
+          prenom: string | null
+          secteur: string | null
+          telephone: string | null
+        }
+        Insert: {
+          besoin?: string | null
+          created_at?: string | null
+          email?: string | null
+          id?: string
+          nom?: string | null
+          prenom?: string | null
+          secteur?: string | null
+          telephone?: string | null
+        }
+        Update: {
+          besoin?: string | null
+          created_at?: string | null
+          email?: string | null
+          id?: string
+          nom?: string | null
+          prenom?: string | null
+          secteur?: string | null
+          telephone?: string | null
+        }
+        Relationships: []
+      }
+      bookings: {
+        Row: {
+          besoin: string | null
+          created_at: string | null
+          date: string | null
+          email: string | null
+          id: string
+          nom: string | null
+          prenom: string | null
+          secteur: string | null
+          status: string | null
+          telephone: string | null
+          time: string | null
+        }
+        Insert: {
+          besoin?: string | null
+          created_at?: string | null
+          date?: string | null
+          email?: string | null
+          id?: string
+          nom?: string | null
+          prenom?: string | null
+          secteur?: string | null
+          status?: string | null
+          telephone?: string | null
+          time?: string | null
+        }
+        Update: {
+          besoin?: string | null
+          created_at?: string | null
+          date?: string | null
+          email?: string | null
+          id?: string
+          nom?: string | null
+          prenom?: string | null
+          secteur?: string | null
+          status?: string | null
+          telephone?: string | null
+          time?: string | null
+        }
+        Relationships: []
+      }
+      diagnostics: {
+        Row: {
+          a_un_site: string | null
+          created_at: string | null
+          demandes_semaine: string | null
+          id: string
+          offre_recommandee: string | null
+          reseaux_sociaux: string | null
+          secteur: string | null
+          taches_repetitives: string[] | null
+        }
+        Insert: {
+          a_un_site?: string | null
+          created_at?: string | null
+          demandes_semaine?: string | null
+          id?: string
+          offre_recommandee?: string | null
+          reseaux_sociaux?: string | null
+          secteur?: string | null
+          taches_repetitives?: string[] | null
+        }
+        Update: {
+          a_un_site?: string | null
+          created_at?: string | null
+          demandes_semaine?: string | null
+          id?: string
+          offre_recommandee?: string | null
+          reseaux_sociaux?: string | null
+          secteur?: string | null
+          taches_repetitives?: string[] | null
+        }
+        Relationships: []
+      }
+      product_requests: {
+        Row: {
+          created_at: string | null
+          email: string | null
+          id: string
+          nom: string | null
+          prenom: string | null
+          product: string | null
+          secteur: string | null
+          telephone: string | null
+        }
+        Insert: {
+          created_at?: string | null
+          email?: string | null
+          id?: string
+          nom?: string | null
+          prenom?: string | null
+          product?: string | null
+          secteur?: string | null
+          telephone?: string | null
+        }
+        Update: {
+          created_at?: string | null
+          email?: string | null
+          id?: string
+          nom?: string | null
+          prenom?: string | null
+          product?: string | null
+          secteur?: string | null
+          telephone?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
