@@ -1,16 +1,38 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Suspense, lazy } from 'react';
+import Navbar from '@/components/Navbar';
+import Hero from '@/components/Hero';
+import MetiersTicker from '@/components/MetiersTicker';
+import ProblemSection from '@/components/ProblemSection';
+import SolutionsSection from '@/components/SolutionsSection';
+import ServicesSection from '@/components/ServicesSection';
+import MethodSection from '@/components/MethodSection';
+import PricingSection from '@/components/PricingSection';
+import DiagnosticSection from '@/components/DiagnosticSection';
+import TestimonialsSection from '@/components/TestimonialsSection';
+import FAQSection from '@/components/FAQSection';
+import FinalCTA from '@/components/FinalCTA';
+import SiteFooter from '@/components/SiteFooter';
+import ChatbotBubble from '@/components/ChatbotBubble';
+import AuditFormModal from '@/components/AuditFormModal';
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
-  return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
-  );
-};
-
-const Index = PlaceholderIndex;
+const Index = () => (
+  <div className="min-h-screen bg-background">
+    <Navbar />
+    <Hero />
+    <MetiersTicker />
+    <ProblemSection />
+    <SolutionsSection />
+    <ServicesSection />
+    <MethodSection />
+    <PricingSection />
+    <DiagnosticSection />
+    <TestimonialsSection />
+    <FAQSection />
+    <FinalCTA />
+    <SiteFooter />
+    <ChatbotBubble />
+    <AuditFormModal />
+  </div>
+);
 
 export default Index;
